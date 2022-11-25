@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+<header>
+    <h1>Реєстрація</h1>
+</header>
+<form action="#" method="post" autocomplete>
+    <fieldset>
+        <legend>Особисті дані</legend>
+        <table>
+            <tr>
+                <td class="column"><label for="full-name">Повне ім'я<span>&#42</span></label></td>
+                <td><input type="text" id="full-name" name="full-name" placeholder="Джон Петренко" required></td>
+            </tr>
+            <tr>
+                <td class="column"><label for="age">Вік</label></td>
+                <td><input type="number" id="age" name="age" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td class="column">Стать</td>
+                <td> <input type="radio" id="man" name="sex" checked>
+                    <label for="man">чоловіча</label>
+                    <input type="radio" id="woman" name="sex">
+                    <label for="woman">жіноча</label></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Контактні дані</legend>
+        <table>
+            <tr>
+                <td class="column"><label for="email">Email<span>&#42</span></label></td>
+                <td><input type="email" id="email" name="email" placeholder="email@mail.com" required></td>
+            </tr>
+            <tr>
+                <td class="column"><label for="address">Повна адреса</label></td>
+                <td><textarea name="address" id="address" cols="25" rows="7" placeholder="Країна,
+регіон, місто/селище, вулиця"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Безпека</legend>
+        <table>
+            <tr>
+                <td class="column"><label for="password">Пароль<span>&#42</span></label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td class="column"><label for="password-check">Пароль ще раз<span>&#42</span></label></td>
+                <td><input type="password" id="password-check" name="password" required></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Напрям підготовки</legend>
+        <table>
+            <tr>
+                <td class="column"> <label for="course">Курс</label></td>
+                <td> <select name="course" id="course">
+                    <option value="front-end">Front-end</option>
+                    <option value="back-end">Back-end</option>
+                    <option value="management">Project Management</option>
+                    <option value="qa">QA Manual</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="column"><label for="level">Рівень підготовки на початок курсу</label></td>
+            <td> <input type="range" id="level" name="level" list="marks"/>
+                <datalist id="marks">
+                    <option value="0" label="0"></option>
+                    <option value="1" label="1"></option>
+                    <option value="2" label="2"></option>
+                    <option value="3" label="3"></option>
+                    <option value="4" label="4"></option>
+                    <option value="5" label="5"></option>
+                </datalist></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <div>
+            <input type="checkbox" name="data-process-agree" id="data-process-agree" required>
+            <label for="data-process-agree"><span>&#42</span>Я погоджуюсь з обробкою персональних даних</label>
+        </div>
+        <div class="buttons">
+            <button type="reset" class="reset-button">Очистити форму</button>
+            <button type="submit" class="submit-button">Зареєструватися</button>
+        </div>
+    </fieldset>
+</form>
+
+</body>
+</html>

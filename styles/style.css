@@ -1,0 +1,63 @@
+h1 {
+   margin: 20px;
+}
+
+form {
+    background-color: #cecdcd;
+    width: 50%;
+    min-inline-size: fit-content;
+    max-width: 500px;
+    padding: 10px;
+    margin: 20px;
+}
+
+fieldset {
+    margin-bottom: 10px;
+}
+
+legend {
+    font-weight: 700;
+}
+
+td {
+    padding-bottom: 5px;
+}
+
+span {
+    color: #9f1414;
+}
+
+.column {
+    width: 100px;
+    padding-right: 20px;
+}
+
+.buttons {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.reset-button {
+    background-color: #ee9878;
+}
+
+.submit-button {
+    background-color: #61f361;
+}
+
+/*Style for input type="range"*/
+
+datalist {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+option {
+    padding: 0;
+}
+
+input[type="range"] {
+    width: 200px;
+    margin: 0;
+}
